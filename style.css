@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&family=Inter:wght@400;700&family=Kumbh+Sans&family=Lexend+Deca&family=Outfit:wght@300;400;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Inter';
+    font-family: 'Lexend Deca';
+    background-color: #0a0c1b;
+}
+
+.main-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-card{
+    max-height: 447px;
+    height: 100%;
+    max-width: 1113px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #773f99;
+    border-radius: 15px;
+    
+}
+
+.card-right{
+    width: 100%;
+    height: 447px;
+   
+    background: rgba(170,42,154,0.91) url(./images/image-header-desktop.jpg) no-repeat scroll 0 0;
+    /* background:  url(./images/image-header-desktop.jpg) center center/cover no-repeat; */
+    opacity: 0.5;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card-left{
+    width: 100%;
+    height: 447px;
+    background-color: #1c1938;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 60px 0 ;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+   
+}
+
+.card-title{
+    height: 100px;
+    width: 100%;
+  
+    margin: 0 0 0;
+    padding-right: 80px;
+}
+
+.card-title h1{
+    color: #fff;
+}
+.card-title h1 span{
+    color:#773f99 ;
+}
+
+
+
+.card-content{
+    height: 100px;
+    width: 100%;
+   
+    margin: 10px 0;
+    padding-right: 100px;
+}
+
+.card-content p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.card-footer{
+    height: 50px;
+    width: 80%;
+  
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    
+}
+.card-footer h2{
+    color: white;
+}
+.card-footer p{
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.card-ratings{
+    height:100%;
+    width: 100%;
+   
+    margin: 0 ;
+}
+
+
+@media only screen and (max-width:1080px) {
+    .main-container{
+        padding:  20px;  
+      }
+      .main-card{
+        height: auto;
+      
+    }
+
+    .card-left{
+        width: 100%;
+        height: 447px;
+        background-color: #1c1938;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 60px 0 ;
+       
+    }
+    
+    .card-title{
+       
+      
+        margin: 0 0 20px;
+        padding-right: 0;
+    }
+    
+    .card-content{
+        height: 100px;
+        width: 100%;
+       padding-right: 0;
+        margin: 20px 0;
+       
+    }
+    
+    .card-content p {
+        color: hsla(0, 0%, 100%, 0.75);
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        font-size: 15px;
+    }
+    
+    .card-right{
+        background: rgba(170,42,154,0.91) url(./images/image-header-mobile.jpg) center center/cover no-repeat scroll 0 0;
+       
+    }
+}
+
+@media only screen and (max-width:600px) { 
+	.main-container{
+      padding:  20px;  
+    }
+    .container{
+        height:auto ;
+        flex-wrap: wrap;
+        
+    }
+    .main-card{
+        height: auto;
+        flex-wrap: wrap;
+       
+    }
+
+    .card-left{
+        height: auto;
+        flex-wrap: wrap;
+        padding: 0 30px;
+        order: 2;
+    }
+
+    .card-title{
+        height: auto;
+        width: 100%;
+      
+        margin: 20px 0  ;
+        padding:0 5px;
+        text-align: center;
+    }
+    
+    
+    .card-content{
+        padding-right: 0;
+        margin: 0;
+    }
+    
+    .card-content p {
+        text-align: center;
+    }
+    .card-footer{
+        height: 200px;
+        width: 100%;
+       align-items: center;
+       justify-content: center;
+        flex-direction: column;
+    }
+    .card-footer h2{
+        text-align: center;
+    }
+    .card-footer p{
+        text-align: center;
+    }
+    .card-right{
+        background: rgba(170,42,154,0.91) url(./images/image-header-mobile.jpg) center center/cover no-repeat scroll 0 0;
+        order: 1;
+    }
+}
